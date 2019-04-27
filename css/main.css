@@ -9,7 +9,12 @@
     }
 
     a, p {
-        font-size: 20px;
+        font-size: 40px !important;
+        line-height: 200% !important;
+    }
+
+    .footer {
+        height: 8vh !important;
     }
 }
 
