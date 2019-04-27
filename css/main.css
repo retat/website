@@ -1,7 +1,26 @@
-html {
-    background: url(/website/assets/images/tent.jpg) no-repeat center center fixed;
+@font-face {
+    font-family: KaushanScript;
+    src: url("/website/assets/KaushanScript-Regular.ttf");
+}
+html, body {
+    background: url(http://localhost:63342/website/assets/images/tent.jpg?_ijt=hvtq3dfheeogsoaamjdhthebil) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: darkslategrey;
+    font-size: 17vw;
+    font-family: KaushanScript, serif;
 }
