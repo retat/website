@@ -1,6 +1,6 @@
 @font-face {
     font-family: KaushanScript;
-    src: url("/website/assets/KaushanScript-Regular.ttf");
+    src: url("/assets/KaushanScript-Regular.ttf");
 }
 
 @media only screen and (max-device-width: 40em) {
@@ -43,7 +43,7 @@
 
 html, body {
     height: 99%;
-    background: url(/website/assets/images/tent.jpg) no-repeat center center fixed;
+    background: url(/assets/images/tent.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
