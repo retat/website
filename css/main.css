@@ -2,7 +2,42 @@
     font-family: KaushanScript;
     src: url("/website/assets/KaushanScript-Regular.ttf");
 }
+
+@media only screen and (max-device-width: 40em) {
+    .social {
+        width: 90% !important;
+    }
+
+    a, p {
+        font-size: 20px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --text-color: black;
+    --background-color: rgba(255, 255, 255, 0.8);
+}
+
 html, body {
+    height: 99%;
     background: url(/website/assets/images/tent.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,17 +45,50 @@ html, body {
     background-size: cover;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+a, p {
+    font-family: monospace, serif;
+    color: var(--text-color);
 }
 
 .title {
-    color: darkslategrey;
-    font-size: 17vw;
+    color: var(--text-color);
+    font-size: 18vw;
+    width: 98%;
+    margin: 0 auto;
     font-family: KaushanScript, serif;
+}
+
+.footer {
+    background-color: var(--background-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    border-radius: 25px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+.socialContent {
+    padding: 2vw;
+}
+
+.disabled {
+    opacity: 0;
+}
+
+.enabled {
+    opacity: 1;
+    -webkit-animation: fadeIn ease-in-out 0.5s;
+    animation: fadeIn ease-in-out 0.5s;
 }
