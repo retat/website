@@ -3,7 +3,7 @@
     src: url("/website/assets/KaushanScript-Regular.ttf");
 }
 html, body {
-    background: url(http://localhost:63342/website/assets/images/tent.jpg?_ijt=hvtq3dfheeogsoaamjdhthebil) no-repeat center center fixed;
+    background: url(/website/assets/images/tent.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
