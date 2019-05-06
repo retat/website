@@ -6,7 +6,6 @@
 @media only screen and (max-device-width: 40em) {
     .social {
         width: 90% !important;
-        padding-top: 10% !important;
     }
 
     a, p {
@@ -63,7 +62,7 @@ a, p {
     border-radius: 25px;
     width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin: 10% auto 0;
     background-color: var(--background-color);
 }
 
