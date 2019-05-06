@@ -19,24 +19,6 @@
     }
 }
 
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 :root {
     --text-color: black;
     --background-color: rgba(255, 255, 255, 0.8);
@@ -58,7 +40,7 @@ a, p {
 
 .title {
     width: 98%;
-    padding-top: 5%;
+    padding-top: 3%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -87,14 +69,4 @@ a, p {
 
 .socialContent {
     padding: 2vw;
-}
-
-.disabled {
-    opacity: 0;
-}
-
-.enabled {
-    opacity: 1;
-    -webkit-animation: fadeIn ease-in-out 0.5s;
-    animation: fadeIn ease-in-out 0.5s;
 }
