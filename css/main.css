@@ -25,7 +25,7 @@
 
 html, body {
     height: 99%;
-    background: url(/assets/images/tent.jpg) no-repeat center center fixed;
+    background: url(/home/rene/Workspace/website/assets/images/tent.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -59,7 +59,7 @@ a, p {
     align-items: center;
 }
 
-.social {
+.popup {
     border-radius: 25px;
     width: 50%;
     height: auto;
@@ -67,7 +67,7 @@ a, p {
     background-color: var(--background-color);
 }
 
-.socialContent {
+.popupContent {
     padding: 2vw;
 }
 
