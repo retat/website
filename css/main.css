@@ -43,6 +43,7 @@ a, p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 40%;
 }
 
 .footer {
@@ -68,4 +69,31 @@ a, p {
 
 .socialContent {
     padding: 2vw;
+}
+
+@keyframes name-anim {
+    from {
+        stroke-dashoffset: -410px
+    }
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes fill-name {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
+}
+
+#name {
+    stroke-dasharray: 410px;
+    stroke-dashoffset: -410px;
+    stroke: black;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: name-anim 3s linear 0s forwards, fill-name 0.5s linear 3s forwards;
 }
