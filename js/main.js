@@ -7,7 +7,7 @@ function showSocial() {
         "        <a href=\"https://twitter.com/Rene__Borner\">Twitter</a><br>\n" +
         "        <a href=\"https://github.com/retat\">Github</a><br>\n" +
         "        <a href=\"https://www.instagram.com/rene__b97/\">Instagram</a>\n" +
-        "    </div>")
+        "    </div>", "social")
 }
 
 function showProjects() {
@@ -18,7 +18,7 @@ function showProjects() {
         "        <a href=\"https://cs4241-best-group-fp-7.glitch.me/\">Music Recommendations Platform</a><br>\n" +
         "        <a href=\"https://github.com/retat/AI-TranslationModelServer\">English to Java AI Project</a><br>\n" +
         "        <a href=\"https://retat.github.io/audiofile-visualizer/\">Audiofile Visualizer</a>\n" +
-        "    </div>")
+        "    </div>", "projects")
 }
 
 function showCV() {
@@ -27,14 +27,17 @@ function showCV() {
         "        <p>Résumé:</p>\n" +
         "        <a href=\"assets/documents/CV_en.pdf\">English</a><br>\n" +
         "        <a href=\"assets/documents/CV_de.pdf\">German</a><br>\n" +
-        "    </div>")
+        "    </div>", "cv")
 }
 
-function togglePopup(content) {
-    if (popupElement.hasClass("active")) {
-        popupElement.fadeOut().html("")
-        popupElement.removeClass("active")
-    } else {
-        popupElement.fadeIn().html(content).addClass("active")
+function togglePopup(content, type) {
+    if (popupElement.hasClass("active") && popupElement.hasClass(type)) {
+        popupElement.fadeOut().html(content)
+        popupElement.removeClass("active").removeClass(type);
+    } else if (popupElement.hasClass("active") && !popupElement.hasClass(type)) {
+        popupElement.removeClass()
+        popupElement.fadeIn().html(content).addClass("active").addClass(type).addClass("popup")
+    }else {
+        popupElement.fadeIn().html(content).addClass("active").addClass(type)
     }
 }
