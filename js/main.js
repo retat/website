@@ -6,7 +6,7 @@ function showSocial() {
         "        <p>Stalk me on:</p>\n" +
         "        <a href=\"https://twitter.com/Rene__Borner\">Twitter</a><br>\n" +
         "        <a href=\"https://github.com/retat\">Github</a><br>\n" +
-        "        <a href=\"https://www.instagram.com/rene__b97/\">Instagram</a>\n" +
+        "        <a href=\"https://www.instagram.com/rene.b___/\">Instagram</a>\n" +
         "    </div>", "social")
 }
 
