@@ -6,7 +6,7 @@ function showSocial() {
         "        <p>Stalk me on:</p>\n" +
         "        <a href=\"https://twitter.com/Rene__Borner\">Twitter</a><br>\n" +
         "        <a href=\"https://github.com/retat\">Github</a><br>\n" +
-        "        <a href=\"https://www.instagram.com/rene.b___/\">Instagram</a>\n" +
+        "        <a href=\"https://www.instagram.com/rene______b/\">Instagram</a>\n" +
         "    </div>", "social")
 }
 
@@ -25,8 +25,8 @@ function showCV() {
     togglePopup(
         "        <div class=\"popupContent\">\n" +
         "        <p>Résumé:</p>\n" +
-        "        <a href=\"assets/documents/CV_en.pdf\">English</a><br>\n" +
-        "        <a href=\"assets/documents/CV_de.pdf\">German</a><br>\n" +
+        "        <a href=\"assets/documents/CV_de(1).pdf\">English version currently not available</a><br>\n" +
+        "        <a href=\"assets/documents/CV_de(1).pdf\">German</a><br>\n" +
         "    </div>", "cv")
 }
 
