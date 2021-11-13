@@ -20,7 +20,7 @@
 
 :root {
     --text-color: black;
-    --background-color: rgba(255, 255, 255, 0.8);
+    --background-color: rgba(255, 255, 255, 0.4);
 }
 
 html, body {
@@ -35,6 +35,10 @@ html, body {
 a, p {
     font-family: monospace, serif;
     color: var(--text-color);
+}
+
+svg {
+    margin: 100px 100px 0 100px;
 }
 
 .title {
@@ -72,28 +76,35 @@ a, p {
 }
 
 @keyframes name-anim {
-    from {
-        stroke-dashoffset: -410px
-    }
     to {
         stroke-dashoffset: 0px;
     }
 }
 
-@keyframes fill-name {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: black;
-    }
+#rene {
+    stroke-dasharray: 1200px;
+    stroke-dashoffset: 1200px;
+    animation: name-anim 3s linear 0s forwards;
 }
 
-#name {
-    stroke-dasharray: 410px;
-    stroke-dashoffset: -410px;
-    stroke: black;
-    fill: transparent;
-    stroke-width: 2px;
-    animation: name-anim 3s linear 0s forwards, fill-name 0.5s linear 3s forwards;
+#accentAigu {
+    stroke-dasharray: 1200px;
+    stroke-dashoffset: 1200px;
+    animation: name-anim 3s linear 0s forwards;
+    animation-delay: 3s;
+}
+
+#b {
+    stroke-dasharray: 1200px;
+    stroke-dashoffset: 1200px;
+    animation: name-anim 3s linear 0s forwards;
+    animation-delay: 4s;
+}
+
+#orner {
+    stroke-dasharray: 1200px;
+    stroke-dashoffset: 1200px;
+    animation: name-anim 4.5s linear 0s forwards;
+    animation-delay: 6s;
+
 }
