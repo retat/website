@@ -25,8 +25,7 @@ function showCV() {
     togglePopup(
         "        <div class=\"popupContent\">\n" +
         "        <p>Résumé:</p>\n" +
-        "        <a href=\"assets/documents/CV_de(1).pdf\">English version currently not available</a><br>\n" +
-        "        <a href=\"assets/documents/CV_de(1).pdf\">German</a><br>\n" +
+        "        <p>CV currently not available online</p><br>\n" +
         "    </div>", "cv")
 }
 
