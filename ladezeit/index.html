@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ladezeit Kalkulator</title>
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    </head>
+    <body>
+        <h1>Ladezeit Kalkulator</h1>
+        <div class="charging-calculator">
+            <form id="charging-form" autocomplete="off">
+                <div class="charging-form__input">
+                    <label for="current-charge">Ladestand (%):</label>
+                    <input
+                        pattern="\d*"
+                        type="number"
+                        id="current-charge"
+                        min="0"
+                        max="100"
+                        step="1"
+                        required
+                    />
+                </div>
+
+                <div class="charging-form__input">
+                    <label for="charging-goal">Ladeziel (%):</label>
+                    <input
+                        pattern="\d*"
+                        type="number"
+                        id="charging-goal"
+                        min="0"
+                        max="100"
+                        step="1"
+                        value="80"
+                        required
+                    />
+                </div>
+
+                <div class="charging-form__input">
+                    <label for="charging-speed">Geschwindigkeit(kW):</label>
+                    <input
+                        pattern="\d*"
+                        type="number"
+                        id="charging-speed"
+                        min="1"
+                        max="500"
+                        step="1"
+                        value="10"
+                        required
+                    />
+                </div>
+
+                <div class="charging-form__input">
+                    <label for="battery">Batteriegröße (kWh):</label>
+                    <input
+                        pattern="\d*"
+                        type="number"
+                        id="battery"
+                        min="1"
+                        max="300"
+                        value="22"
+                        required
+                    />
+                </div>
+
+                <button type="button" onclick="calculateTime()">
+                    Berechnen
+                </button>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Ladezeit</th>
+                            <td id="time">--</td>
+                        </tr>
+                        <tr>
+                            <th>Uhrzeit</th>
+                            <td id="finish-time">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

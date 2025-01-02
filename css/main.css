@@ -1,44 +1,87 @@
 @font-face {
-    font-family: KaushanScript;
-    src: url("/assets/KaushanScript-Regular.ttf");
+    font-family: GolosText;
+    src: url("/assets/golos.ttf");
 }
 
-@media only screen and (max-device-width: 40em) {
-    .social {
-        width: 90% !important;
-    }
-
-    a, p {
-        font-size: 40px !important;
-        line-height: 200% !important;
-    }
-
-    .footer {
-        height: 8vh !important;
-    }
+@font-face {
+    font-family: Sixtyfour;
+    src: url("/assets/sixtyfour.ttf");
 }
 
-:root {
-    --text-color: black;
-    --background-color: rgba(255, 255, 255, 0.4);
-}
-
-html, body {
-    height: 99%;
+html,
+body {
+    font-size: 16px;
     background: url(/assets/images/tent.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: GolosText;
 }
 
-a, p {
-    font-family: monospace, serif;
-    color: var(--text-color);
+h1,
+h2 {
+    font-family: Sixtyfour;
+    text-align: center;
 }
 
 svg {
     margin: 100px 100px 0 100px;
+}
+
+.charging-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+
+    input {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    button {
+        background: white;
+        border: none;
+        width: fit-content;
+        padding: 10px;
+        align-self: center;
+        color: black;
+        font-size: 16px;
+    }
+
+    table {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        border: none;
+        padding: 8px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    td {
+        text-align: right;
+    }
+
+    #charging-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .charging-form__input {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .title {
@@ -48,31 +91,6 @@ svg {
     margin-left: auto;
     margin-right: auto;
     height: 40%;
-}
-
-.footer {
-    background-color: var(--background-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 4vh;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.popup {
-    border-radius: 25px;
-    width: 50%;
-    height: auto;
-    margin: 10% auto 0;
-    background-color: var(--background-color);
-}
-
-.popupContent {
-    padding: 2vw;
 }
 
 @keyframes name-anim {
@@ -106,5 +124,4 @@ svg {
     stroke-dashoffset: 1200px;
     animation: name-anim 4.5s linear 0s forwards;
     animation-delay: 6s;
-
 }
